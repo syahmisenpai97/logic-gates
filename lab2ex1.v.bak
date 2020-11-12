@@ -1,0 +1,11 @@
+module lab2ex1(input X, Y, Z
+				output  A);
+			wire and1, and2, and3;
+		
+		and(and1, X, Y);
+		and(and2, Y, Z);
+		and(and3, X, Z);
+		
+		or(A,and1,and2,and3);
+		
+endmodule
